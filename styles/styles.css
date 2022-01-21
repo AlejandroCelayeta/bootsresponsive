@@ -1,0 +1,187 @@
+/*Reset CSS*/
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: grey;
+    text-decoration: none;
+}
+
+/*Título central header*/
+h1 {
+    position: relative;
+    padding-top: 3%;
+}
+
+/* Propiedasdes del NAV*/
+nav {
+    display: block;
+    padding: 0%;
+    color: white;
+}
+
+/*Propiedades del menú*/
+.dropdown {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    border: white;
+    background: white;
+}
+
+/*Propiedades del botón*/
+.btn {
+    display: flex;
+    box-sizing: border-box;
+    margin: 1%;
+    padding: 0%;
+    text-align: left;
+    color: rgb(252, 249, 249);
+    cursor: hand;
+}
+
+/*Ajuste de fondos botón*/
+.btn-secondary {
+    background-color: white;
+    border: none;
+    padding-top: 0.1rem;
+    padding-right: 0.6rem;
+}
+
+/*Ajuste de efectos on focus botón*/
+.btn-secondary:focus {
+    color: white;
+    text-decoration-style: none;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    box-shadow: 0 0 0 0.25rem #f8f9fa;
+}
+
+/*Efecto menu*/
+.btn:hover {
+    transition: 2.3s;
+    transform: rotate(360deg);
+}
+
+/*Propiedades del Main*/
+.card-body {
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+/*Propiedades del footer*/
+
+/*Propiedades etiqueta redes*/
+h2 {
+    font-size: 1em;
+    font-weight: bold;
+    color: grey;
+    text-align: start;
+    padding-top: 0.5em;
+    padding-bottom: 0.5%;
+}
+
+/*Ajuste logo Linkedin*/
+.linkedin {
+    display: block;
+    margin-left: 0.5em;
+    margin-bottom: 0.6em;
+    padding-top: 0.2em;
+
+}
+
+/*Animación logo Linkedin*/
+.linkedin:hover {
+    transition: 2.3s;
+    transform: rotate(360deg);
+}
+
+/*Ajuste logo Facebook*/
+.facebook {
+    display: block;
+    margin-left: 0.5em;
+    margin-bottom: 0.2em;
+    padding: 0.2em;
+}
+
+/*Animación logo Facebook*/
+.facebook:hover {
+    transition: 2.3s;
+    transform: rotate(360deg);
+}
+
+/*Quitando el borde que viene por defecto de Bootstrap*/
+.card {
+    border: 0px;
+}
+
+/*Copyright*/
+h3 {
+    font-size: 0.6em;
+    font-weight: bold;
+    color: grey;
+    text-align: center;
+    padding-top: 0.1em;
+    padding-bottom: 0.1%;
+}
+
+/*Ajuste del Formulario*/
+.contenedor-suscribe {
+    display: inline-block;
+}
+
+/*Ajuste de imágenes del portfolio*/
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 2 / 2 / 3;
+    grid-area: 2 / 1 / 3 / 2;
+    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+/*Animación Imágenes portfolio*/
+
+/*Efectos imágenes*/
+
+.ceti:hover {
+    border: 1px solid grey;
+    transform: scale(1.1);
+}
+
+.lope:hover {
+    border: 1px solid grey;
+    transform: scale(1.1);
+}
+
+.napro:hover {
+    border: 1px solid grey;
+    transform: scale(1.1);
+}
+
+.para:hover {
+    border: 1px solid grey;
+    transform: scale(1.1);
+}
+
+.vita:hover {
+    border: 1px solid grey;
+    transform: scale(1.1);
+}
+
+
+/* Media queries */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
