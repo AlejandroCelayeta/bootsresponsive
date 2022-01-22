@@ -6,15 +6,25 @@
     text-align: center;
     color: grey;
     text-decoration: none;
-    
+    box-sizing: border-box;
+    border: gray solid 1px;
+
 }
 
-body {
+.body-index,
+.body-quienes,
+.body-portfolio,
+.body-contacto {
     display: inline-block;
 }
 
+.body-suscripcion,
+.body-servicios {
+    display: grid;
+}
+
 .h1 {
-    font-size: 1.4em;
+    font-size: 1vh;
     margin-top: 20%;
 }
 
@@ -25,7 +35,7 @@ body {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 /*Propiedades del menú*/
