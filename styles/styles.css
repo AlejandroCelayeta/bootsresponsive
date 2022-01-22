@@ -7,10 +7,10 @@
     color: grey;
     text-decoration: none;
     box-sizing: border-box;
-    border: gray solid 1px;
 
 }
 
+/*Ajustes de los bodys*/
 .body-index,
 .body-quienes,
 .body-portfolio,
@@ -23,11 +23,6 @@
     display: grid;
 }
 
-.h1 {
-    font-size: 1vh;
-    margin-top: 20%;
-}
-
 /*Ajustes del Main*/
 .main {
     display: inline-block;
@@ -35,7 +30,7 @@
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 /*Propiedades del menú*/
@@ -47,6 +42,7 @@
     padding: 20px;
     border: white;
     background: white;
+
 }
 
 /*Propiedades del botón*/
@@ -100,7 +96,7 @@ h2 {
     font-weight: bold;
     color: grey;
     text-align: start;
-    padding-top: 0.5em;
+    padding-top: 3em;
     padding-bottom: 0.5%;
     margin-top: 2.5em;
 }
@@ -137,6 +133,7 @@ h2 {
 /*Quitando el borde que viene por defecto de Bootstrap*/
 .card {
     border: 0px;
+    margin-top: 7em;
 }
 
 /*Copyright*/
@@ -145,7 +142,6 @@ h3 {
     font-weight: bold;
     color: grey;
     text-align: center;
-    padding-top: 0.1em;
     padding-bottom: 0.1%;
 }
 
@@ -170,7 +166,7 @@ h3 {
 
 /*Animación Imágenes portfolio*/
 
-/*Efectos imágenes*/
+/*Efectos imágenes con pseudo clases*/
 
 .ceti:hover {
     border: 1px solid grey;
@@ -197,12 +193,52 @@ h3 {
     transform: scale(1.1);
 }
 
+/*Pseudoclases contacto*/
+.mapa-google:hover {
+    padding: 0px;
+    transform: scale(1.1);
+}
+
+/*Pseudo clases suscripción*/
+.form-control:focus {
+    background-color: goldenrod;
+    font-weight: bolder;
+}
+
+/*Pseudo clases h2*/
+h2:hover {
+    transform: scale(1.1);
+    color: crimson;
+}
+
+/*Pseudo elementos*/
+li::before {
+    content: "+";
+    position: relative;
+    left: -1px;
+}
 
 /* Media queries */
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {}
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
 
+    * {
+        color: darkred;
+        font-weight: bolder;
+    }
+    h3{
+        color:darkred;
+    }
+}
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    * {
+        color: navy;
+        font-weight: bolder;
+    }
+    h3{
+        color:navy;
+    }
+}
