@@ -2,25 +2,78 @@
 * {
     margin: 0%;
     padding: 0%;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    color: grey;
-    text-decoration: none;
     box-sizing: border-box;
-
 }
 
-/*Ajustes de los bodys*/
-.body-index,
-.body-quienes,
-.body-portfolio,
-.body-contacto {
-    display: inline-block;
+/* Estilos Generales */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    text-align: center;
 }
 
 .body-suscripcion,
 .body-servicios {
     display: grid;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1em;
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 15%;
+}
+
+/* Header */
+
+.header {
+    padding: 15px 0;
+}
+
+.header .logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 50%;
+    height: 50%;
+}
+
+.header .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.header .header-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 15%; */
+}
+
+.header-img img {
+    width: 50%;
+    height: 50%;
+}
+
+/* Fin Header */
+
+/*Ajuste del Nav*/
+.dropdown {
+    z-index: 2;
 }
 
 /*Ajustes del Main*/
@@ -42,7 +95,6 @@
     padding: 20px;
     border: white;
     background: white;
-
 }
 
 /*Propiedades del botón*/
@@ -92,10 +144,10 @@
 
 /*Propiedades etiqueta redes*/
 h2 {
-    font-size: 1vw;
+    font-size: 1em;
     font-weight: bold;
     color: grey;
-    text-align: start;
+    text-align: center;
     padding-top: 3em;
     padding-bottom: 0.5%;
     margin-top: 2.5em;
@@ -130,15 +182,23 @@ h2 {
     transform: rotate(360deg);
 }
 
-/*Quitando el borde que viene por defecto de Bootstrap*/
+/* Footer Quitando el borde que viene por defecto de Bootstrap*/
 .card {
     border: 0px;
     margin-top: 7em;
+    max-width: 300px;
+}
+
+.card-title {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: grey;
+    text-align: left;
 }
 
 /*Copyright*/
-h3 {
-    font-size: 0.6vw;
+.parrafo-copy {
+    font-size: 0.5em;
     font-weight: bold;
     color: grey;
     text-align: center;
@@ -218,6 +278,21 @@ li::before {
     left: -1px;
 }
 
+.mapa-google {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.mapa-google iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* Media queries */
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -227,9 +302,11 @@ li::before {
         color: darkred;
         font-weight: bolder;
     }
-    h3{
-        color:darkred;
+
+    p {
+        color: darkred;
     }
+
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -238,7 +315,8 @@ li::before {
         color: navy;
         font-weight: bolder;
     }
-    h3{
-        color:navy;
+
+    h3 {
+        color: navy;
     }
 }
